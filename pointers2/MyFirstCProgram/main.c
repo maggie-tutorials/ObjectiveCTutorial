@@ -7,18 +7,20 @@
 //
 
 #include <stdio.h>
-int increment (int x);
+void increment (int *x);
 
 int main()
 {
     int i = 100;
     printf("Value of i = %d\n", i);
     printf("Memory address of i = %p\n", &i);
-    increment(i);
+    increment(&i);
+    printf("Value of incremented i = %d\n", i);
+
     return 0;
 }
 
-int increment(int x) {
-    printf("Memory address of x = %p\n", &x);
-    return x = x + 1;
+void increment(int *x) {
+    printf("Memory address of x = %p\n", x);
+    *x += 1;
 }
