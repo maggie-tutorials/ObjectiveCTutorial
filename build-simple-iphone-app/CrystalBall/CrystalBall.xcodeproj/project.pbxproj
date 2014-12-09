@@ -81,8 +81,6 @@
 		9484D9231A34CA02008DF58E /* CrystalBall */ = {
 			isa = PBXGroup;
 			children = (
-				9484D9281A34CA02008DF58E /* AppDelegate.h */,
-				9484D9291A34CA02008DF58E /* AppDelegate.m */,
 				9484D92B1A34CA02008DF58E /* ViewController.h */,
 				9484D92C1A34CA02008DF58E /* ViewController.m */,
 				9484D92E1A34CA02008DF58E /* Main.storyboard */,
@@ -96,6 +94,8 @@
 		9484D9241A34CA02008DF58E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9484D9281A34CA02008DF58E /* AppDelegate.h */,
+				9484D9291A34CA02008DF58E /* AppDelegate.m */,
 				9484D9251A34CA02008DF58E /* Info.plist */,
 				9484D9261A34CA02008DF58E /* main.m */,
 			);
@@ -346,6 +346,7 @@
 				INFOPLIST_FILE = CrystalBall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -356,6 +357,7 @@
 				INFOPLIST_FILE = CrystalBall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
