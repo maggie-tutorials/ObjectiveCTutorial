@@ -19,19 +19,14 @@
     // Do any additional setup after loading the view, typically from a nib.
     }
 
-- (void) viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    CGRect frame = self.predictionLabel.frame;
-    self.predictionLabel.frame = CGRectMake(frame.origin.x, 200, frame.size.width, frame.size.height);
-    
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)buttonPressed {
-    self.predictionLabel.text = @"YES!";
+    NSArray *predictions = [[NSArray alloc] initWithObjects:@"It is Certain",@"It is Decidedly so",@"All signs say YES", @"The stars are not aligned", @"My reply is no", @"It is doubtful", @"Better not tell you no", @"Concentrate and ask again", @"Unable to answer now", nil];
+
+    self.predictionLabel.text = [predictions objectAtIndex:3];
 }
 @end
