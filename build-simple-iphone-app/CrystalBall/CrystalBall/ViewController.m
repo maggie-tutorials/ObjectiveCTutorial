@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.predictions = [[NSArray alloc] initWithObjects:@"It is Certain",@"It is Decidedly so",@"All signs say YES", @"The stars are not aligned", @"My reply is no", @"It is doubtful", @"Better not tell you no", @"Concentrate and ask again", @"Unable to answer now", nil];
     }
 
 - (void)didReceiveMemoryWarning {
@@ -25,8 +25,6 @@
 }
 
 - (IBAction)buttonPressed {
-    NSArray *predictions = [[NSArray alloc] initWithObjects:@"It is Certain",@"It is Decidedly so",@"All signs say YES", @"The stars are not aligned", @"My reply is no", @"It is doubtful", @"Better not tell you no", @"Concentrate and ask again", @"Unable to answer now", nil];
-
-    self.predictionLabel.text = [predictions objectAtIndex:3];
+    self.predictionLabel.text = [self.predictions objectAtIndex:3];
 }
 @end
